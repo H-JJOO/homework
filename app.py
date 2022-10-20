@@ -27,7 +27,6 @@ def homework_post():
 @app.route("/homework", methods=["GET"])
 def homework_get():
     fan_list = list(db.fanList.find({}, {'_id': False}))
-    print(fan_list)
     return jsonify({'fan_list': fan_list})
 
 if __name__ == '__main__':
