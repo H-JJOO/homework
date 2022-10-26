@@ -72,10 +72,12 @@
         }
     </style>
     <script>
+
         $(document).ready(function(){
             set_temp()
             show_comment()
         });
+
         function set_temp(){
             $.ajax({
                 type: "GET",
@@ -86,6 +88,7 @@
                 }
             })
         }
+
         function save_comment(){
             let nickname = $('#name').val()
             let comment = $('#comment').val()
@@ -99,6 +102,7 @@
                 }
             })
         }
+
         function show_comment(){
             $.ajax({
                 type: "GET",
@@ -127,6 +131,7 @@
                 }
             });
         }
+
     </script>
 </head>
 <body>
